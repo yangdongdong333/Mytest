@@ -1,6 +1,5 @@
 package com.ydd;
 
-import javax.management.modelmbean.ModelMBean;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
@@ -93,7 +92,6 @@ public class ReflectionTest {
             String modifier=Modifier.toString(f.getModifiers());
             if (modifier.length()>0) {
                 System.out.print(modifier+" "+type+" "+name+";");
-
             }
         }
     }
