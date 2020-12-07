@@ -10,8 +10,11 @@ package com.ydd;
 public class UniversalToStringMethod {
     public static void main(String[] args) {
 
-    }
 
+    }
+class t extends Thread{
+
+}
 //    @Override
 //    public String toString() {
 //        return new ObjectAnalyzer().toString(this);
