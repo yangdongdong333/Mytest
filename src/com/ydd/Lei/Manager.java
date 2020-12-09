@@ -13,8 +13,19 @@ import com.ydd.classPractice.*;
 public class Manager extends Employee{
     private double bonus;
 
-    public Manager(String name, double salary, LocalDate hireday){
+    public Manager(String name, double bonus) {
+        super(name);
+        this.bonus = bonus;
+    }
 
+    public Manager(double s, double bonus) {
+        super(s);
+        this.bonus = bonus;
+    }
+
+    public Manager(String n, double s, double bonus) {
+        super(n, s);
+        this.bonus = bonus;
     }
 
     public double getBonus() {

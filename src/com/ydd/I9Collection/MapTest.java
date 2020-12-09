@@ -1,7 +1,6 @@
 package com.ydd.I9Collection;
 
 import java.util.HashMap;
-import com.ydd.Lei.*;
 import com.ydd.classPractice.Employee;
 
 /**
@@ -25,8 +24,8 @@ public class MapTest {
 
 
         staff.forEach((k,v)-> System.out.println("key="+k+",value="+v));//映射中的每一项会依序调用lamda表达式
-        staff.merge("word",1,Integer::sum);
-
+//        Employee word = staff.merge("word", 1, Integer::sum);
+//
 
     }
 }
