@@ -1,4 +1,4 @@
-package com.ydd;
+package com.ydd.J10ConcurrentAndSynchronized;
 
 /**
  * @Author: yangdongdong
