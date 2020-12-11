@@ -1,6 +1,7 @@
 package com.ydd.J10ConcurrentAndSynchronized;
 
 import java.util.Arrays;
+import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
@@ -11,7 +12,9 @@ import java.util.concurrent.locks.ReentrantLock;
 public class Bank {
     private final double[] accounts;
     private ReentrantLock bankLock=new ReentrantLock();
+    private Condition sufficientFunds;
     public Bank(int n,double initiaBalance){
+        sufficientFunds= bankLock.newCondition();//创建一个条件对象
         accounts=new double[n];
         Arrays.fill(accounts,initiaBalance);//使用第二个参数，填充数组
     }
