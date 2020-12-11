@@ -12,18 +12,18 @@ import com.ydd.classPractice.Employee;
  */
 public class MapTest {
     public static void main(String[] args) {
-        var staff=new HashMap<String, Employee>(); //HashMap实现了Map接口
+        var staff1=new HashMap<String, Employee>(); //HashMap实现了Map接口
         var harry=new Employee("harry hacker");
         var alice=new Employee("alice");
         var snow=new Employee("snow");
-        staff.put("987",harry);
-        staff.put("111",alice);
-        staff.put("222",snow);
-        staff.put(null,alice);  //允许键为空
-        Employee e=staff.get(987); //得到键对应的值
+        staff1.put("987",harry);
+        staff1.put("111",alice);
+        staff1.put("222",snow);
+        staff1.put(null,alice);  //允许键为空
+        Employee e=staff1.get(987); //得到键对应的值
 
 
-        staff.forEach((k,v)-> System.out.println("key="+k+",value="+v));//映射中的每一项会依序调用lamda表达式
+        staff1.forEach((k,v)-> System.out.println("key="+k+",value="+v));//映射中的每一项会依序调用lamda表达式
 //        Employee word = staff.merge("word", 1, Integer::sum);
 //
 
