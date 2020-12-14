@@ -30,7 +30,7 @@
       <option name="IGNORE_JAVADOC_PERIOD" value="true" />
       <option name="IGNORE_DUPLICATED_THROWS" value="false" />
       <option name="IGNORE_POINT_TO_ITSELF" value="false" />
-      <option name="myAdditionalJavadocTags" value="Package:,ClassName:,Author:,CreateTime:,Description:测试映射Map,Description:测试映射HashMap，允许key为null,Description:,Description:并发,Description:使用ReentrantLock类的锁对象,Description:测试条件变量" />
+      <option name="myAdditionalJavadocTags" value="Package:,ClassName:,Author:,CreateTime:,Description:测试映射Map,Description:测试映射HashMap，允许key为null,Description:,Description:并发,Description:使用ReentrantLock类的锁对象,Description:测试条件变量,Description:c测试同步包装器，任何集合类可以通过使用同步包装器变成线程安全的。,Description:使用FutrueTask启动线程池" />
     </inspection_tool>
   </profile>
 </component>
