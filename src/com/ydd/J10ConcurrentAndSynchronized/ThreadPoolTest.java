@@ -1,6 +1,8 @@
 package com.ydd.J10ConcurrentAndSynchronized;
 
 import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 import java.util.concurrent.FutureTask;
 
 /**
@@ -21,6 +23,8 @@ public class ThreadPoolTest {
         FutureTask futureTask=new FutureTask<Integer>(task);
         var t=new Thread(futureTask);
         t.start();
-        Integer integer=futureTask.get();
+//        Integer integer=futureTask.get();
+        ExecutorService  executorService= Executors.newFixedThreadPool(12);
+
     }
 }
