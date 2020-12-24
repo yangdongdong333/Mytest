@@ -1,6 +1,5 @@
 package com.ydd.J10ConcurrentAndSynchronized;
 
-import java.io.IOError;
 import java.io.IOException;
 import java.nio.file.*;
 import java.time.Instant;
@@ -73,7 +72,7 @@ public class ExecutorDemo {
         };
     }
 
-    public static void main(String[] args) throws InterruptedException, ExecutionException {
+    public static void main(String[] args) throws InterruptedException, ExecutionException,NullPointerException {
      try(var in=new Scanner(System.in))
      {
          System.out.print("enter base directory (e.g. /opt/jdk-9-src): ");
