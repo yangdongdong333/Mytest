@@ -9,6 +9,10 @@ package com.ydd;
  */
 public class VarArgsTest {
     public static void main(String[] args) {
-
+       String s1=new String("sdf");
+       String s2=new String("sdf");
+        System.out.println(s1.hashCode()==s2.hashCode());
+        System.out.println(s1.equals(s2));
+        System.out.println(new StringBuilder(s1).reverse());
     }
 }
